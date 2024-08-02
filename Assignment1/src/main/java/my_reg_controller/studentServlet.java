@@ -48,7 +48,7 @@ public class studentServlet extends HttpServlet {
             try {
                 studentDao.insertStudent(student);
                 //response.sendRedirect("studentdetails.jsp");
-                response.getWriter().append("Student inserted successfully.");
+                response.getWriter().append("Student inserted successfully changes.");
             } catch (Exception e) {
                 e.printStackTrace();
                 response.getWriter().append("Error: Unable to insert student. ").append(e.getMessage());
